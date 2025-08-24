@@ -273,7 +273,7 @@ class TestEmployee:
     def test_get_reviews(self):
         '''contain a method "reviews" that gets the reviews for the current Employee instance '''
 
-        from review import Review  # avoid circular import issue
+        from review import Review 
         Review.all = {}
         CURSOR.execute("DROP TABLE IF EXISTS reviews")
 
